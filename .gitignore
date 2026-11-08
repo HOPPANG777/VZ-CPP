@@ -1,32 +1,29 @@
-# Prerequisites
-*.d
+# ── Visual Studio (개인 환경/캐시) ─────────────────────
+.vs/
+*.user
+*.suo
+enc_temp_folder/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# ── 빌드 출력 ─────────────────────────────────────────
+# vcxproj의 OutDir / IntDir = $(SolutionDir)_Build\
+/_Build/
+
+# 프로젝트 폴더 안에 생기는 VS 기본 출력 폴더
+# (OutDir 지정 전에 빌드했거나 설정이 빠진 경우 대비)
+x64/
+x86/
+Win32/
+Debug/
+Release/
+
+# ── 컴파일 산출물 (출력 폴더 밖으로 샐 경우 대비) ──────
 *.obj
-
-# Precompiled Headers
-*.gch
+*.o
 *.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+*.pdb
+*.ilk
+*.idb
+*.ipdb
+*.iobj
 *.exe
 *.out
-*.app
